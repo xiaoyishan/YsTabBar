@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		213EC1921F284ADC00F52AE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1911F284ADC00F52AE3 /* main.m */; };
+		213EC1951F284ADC00F52AE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1941F284ADC00F52AE3 /* AppDelegate.m */; };
+		213EC1981F284ADC00F52AE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1971F284ADC00F52AE3 /* ViewController.m */; };
+		213EC19B1F284ADC00F52AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213EC1991F284ADC00F52AE3 /* Main.storyboard */; };
+		213EC19D1F284ADC00F52AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213EC19C1F284ADC00F52AE3 /* Assets.xcassets */; };
+		213EC1A01F284ADC00F52AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213EC19E1F284ADC00F52AE3 /* LaunchScreen.storyboard */; };
+		213EC1A91F2866F200F52AE3 /* YsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1A81F2866F200F52AE3 /* YsTabBar.m */; };
+		213EC1AD1F28A27500F52AE3 /* One.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1AC1F28A27500F52AE3 /* One.m */; };
+		213EC1B01F28A28100F52AE3 /* Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1AF1F28A28100F52AE3 /* Two.m */; };
+		213EC1B31F28A29100F52AE3 /* Three.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1B21F28A29100F52AE3 /* Three.m */; };
+		213EC1B61F28A29F00F52AE3 /* Four.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1B51F28A29F00F52AE3 /* Four.m */; };
+		6F8066F6F397D94E02593FB8 /* libPods-SegmentBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 887572EFDF8C1E51FC878807 /* libPods-SegmentBar.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C8A17479A5636DC1A790041 /* Pods-SegmentBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentBar/Pods-SegmentBar.release.xcconfig"; sourceTree = "<group>"; };
+		213EC18D1F284ADC00F52AE3 /* YsTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YsTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		213EC1911F284ADC00F52AE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		213EC1931F284ADC00F52AE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		213EC1941F284ADC00F52AE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		213EC1961F284ADC00F52AE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		213EC1971F284ADC00F52AE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		213EC19A1F284ADC00F52AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		213EC19C1F284ADC00F52AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		213EC19F1F284ADC00F52AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		213EC1A11F284ADC00F52AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213EC1A71F2866F200F52AE3 /* YsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YsTabBar.h; sourceTree = "<group>"; };
+		213EC1A81F2866F200F52AE3 /* YsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YsTabBar.m; sourceTree = "<group>"; };
+		213EC1AB1F28A27500F52AE3 /* One.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = One.h; sourceTree = "<group>"; };
+		213EC1AC1F28A27500F52AE3 /* One.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = One.m; sourceTree = "<group>"; };
+		213EC1AE1F28A28100F52AE3 /* Two.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Two.h; sourceTree = "<group>"; };
+		213EC1AF1F28A28100F52AE3 /* Two.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Two.m; sourceTree = "<group>"; };
+		213EC1B11F28A29100F52AE3 /* Three.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three.h; sourceTree = "<group>"; };
+		213EC1B21F28A29100F52AE3 /* Three.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Three.m; sourceTree = "<group>"; };
+		213EC1B41F28A29F00F52AE3 /* Four.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Four.h; sourceTree = "<group>"; };
+		213EC1B51F28A29F00F52AE3 /* Four.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Four.m; sourceTree = "<group>"; };
+		65F7C3A635089DDCC2ED2DBD /* Pods-SegmentBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentBar/Pods-SegmentBar.debug.xcconfig"; sourceTree = "<group>"; };
+		887572EFDF8C1E51FC878807 /* libPods-SegmentBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SegmentBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		213EC18A1F284ADC00F52AE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8066F6F397D94E02593FB8 /* libPods-SegmentBar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213EC1841F284ADC00F52AE3 = {
+			isa = PBXGroup;
+			children = (
+				213EC18F1F284ADC00F52AE3 /* SegmentBar */,
+				213EC18E1F284ADC00F52AE3 /* Products */,
+				92F915A4B662872FB4B3693F /* Pods */,
+				7DB98CE6B4EF1B433E113D93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		213EC18E1F284ADC00F52AE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				213EC18D1F284ADC00F52AE3 /* YsTabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		213EC18F1F284ADC00F52AE3 /* SegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				213EC1A71F2866F200F52AE3 /* YsTabBar.h */,
+				213EC1A81F2866F200F52AE3 /* YsTabBar.m */,
+				213EC1AA1F28A25500F52AE3 /* SubViewControllers */,
+				213EC1961F284ADC00F52AE3 /* ViewController.h */,
+				213EC1971F284ADC00F52AE3 /* ViewController.m */,
+				213EC1991F284ADC00F52AE3 /* Main.storyboard */,
+				213EC1901F284ADC00F52AE3 /* Supporting Files */,
+			);
+			path = SegmentBar;
+			sourceTree = "<group>";
+		};
+		213EC1901F284ADC00F52AE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				213EC1931F284ADC00F52AE3 /* AppDelegate.h */,
+				213EC1941F284ADC00F52AE3 /* AppDelegate.m */,
+				213EC19C1F284ADC00F52AE3 /* Assets.xcassets */,
+				213EC19E1F284ADC00F52AE3 /* LaunchScreen.storyboard */,
+				213EC1A11F284ADC00F52AE3 /* Info.plist */,
+				213EC1911F284ADC00F52AE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		213EC1AA1F28A25500F52AE3 /* SubViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				213EC1AB1F28A27500F52AE3 /* One.h */,
+				213EC1AC1F28A27500F52AE3 /* One.m */,
+				213EC1AE1F28A28100F52AE3 /* Two.h */,
+				213EC1AF1F28A28100F52AE3 /* Two.m */,
+				213EC1B11F28A29100F52AE3 /* Three.h */,
+				213EC1B21F28A29100F52AE3 /* Three.m */,
+				213EC1B41F28A29F00F52AE3 /* Four.h */,
+				213EC1B51F28A29F00F52AE3 /* Four.m */,
+			);
+			name = SubViewControllers;
+			sourceTree = "<group>";
+		};
+		7DB98CE6B4EF1B433E113D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887572EFDF8C1E51FC878807 /* libPods-SegmentBar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92F915A4B662872FB4B3693F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65F7C3A635089DDCC2ED2DBD /* Pods-SegmentBar.debug.xcconfig */,
+				0C8A17479A5636DC1A790041 /* Pods-SegmentBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		213EC18C1F284ADC00F52AE3 /* YsTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 213EC1A41F284ADC00F52AE3 /* Build configuration list for PBXNativeTarget "YsTabBar" */;
+			buildPhases = (
+				C509011B85B16C149DA58B25 /* [CP] Check Pods Manifest.lock */,
+				213EC1891F284ADC00F52AE3 /* Sources */,
+				213EC18A1F284ADC00F52AE3 /* Frameworks */,
+				213EC18B1F284ADC00F52AE3 /* Resources */,
+				FF5970AF2C6446B0E6894FF2 /* [CP] Embed Pods Frameworks */,
+				A2EA356689952370E3DD723F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YsTabBar;
+			productName = SegmentBar;
+			productReference = 213EC18D1F284ADC00F52AE3 /* YsTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		213EC1851F284ADC00F52AE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xiexin;
+				TargetAttributes = {
+					213EC18C1F284ADC00F52AE3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 213EC1881F284ADC00F52AE3 /* Build configuration list for PBXProject "YsTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 213EC1841F284ADC00F52AE3;
+			productRefGroup = 213EC18E1F284ADC00F52AE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				213EC18C1F284ADC00F52AE3 /* YsTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		213EC18B1F284ADC00F52AE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213EC1A01F284ADC00F52AE3 /* LaunchScreen.storyboard in Resources */,
+				213EC19D1F284ADC00F52AE3 /* Assets.xcassets in Resources */,
+				213EC19B1F284ADC00F52AE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2EA356689952370E3DD723F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SegmentBar/Pods-SegmentBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C509011B85B16C149DA58B25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5970AF2C6446B0E6894FF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SegmentBar/Pods-SegmentBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		213EC1891F284ADC00F52AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213EC1B01F28A28100F52AE3 /* Two.m in Sources */,
+				213EC1981F284ADC00F52AE3 /* ViewController.m in Sources */,
+				213EC1A91F2866F200F52AE3 /* YsTabBar.m in Sources */,
+				213EC1AD1F28A27500F52AE3 /* One.m in Sources */,
+				213EC1B31F28A29100F52AE3 /* Three.m in Sources */,
+				213EC1B61F28A29F00F52AE3 /* Four.m in Sources */,
+				213EC1951F284ADC00F52AE3 /* AppDelegate.m in Sources */,
+				213EC1921F284ADC00F52AE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		213EC1991F284ADC00F52AE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213EC19A1F284ADC00F52AE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		213EC19E1F284ADC00F52AE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				213EC19F1F284ADC00F52AE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		213EC1A21F284ADC00F52AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		213EC1A31F284ADC00F52AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		213EC1A51F284ADC00F52AE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F7C3A635089DDCC2ED2DBD /* Pods-SegmentBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SegmentBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yishan.SegmentBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		213EC1A61F284ADC00F52AE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8A17479A5636DC1A790041 /* Pods-SegmentBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SegmentBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yishan.SegmentBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		213EC1881F284ADC00F52AE3 /* Build configuration list for PBXProject "YsTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213EC1A21F284ADC00F52AE3 /* Debug */,
+				213EC1A31F284ADC00F52AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		213EC1A41F284ADC00F52AE3 /* Build configuration list for PBXNativeTarget "YsTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				213EC1A51F284ADC00F52AE3 /* Debug */,
+				213EC1A61F284ADC00F52AE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 213EC1851F284ADC00F52AE3 /* Project object */;
+}
