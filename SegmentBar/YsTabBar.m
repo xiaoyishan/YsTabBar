@@ -60,17 +60,14 @@
 
         //主窗体
         UIView *SubV = [UIView new];
-        SubV.backgroundColor = [self randomColor];
+//        SubV.backgroundColor = [self randomColor];
         [myScroller addSubview:SubV];
         [ViewArr addObject:SubV];
 
         //加入主控制器
         [SubV addSubview:[controllers[i] view]];
 
-//        UILabel *SS = [UILabel new];
-//        SS.frame = CGRectMake(100, 100, 100, 100);
-//        SS.text = [NSString stringWithFormat:@"%zd",i];
-//        [SubV addSubview:SS];
+
     }
 
     //滑动线条
@@ -184,12 +181,12 @@
 
 
 
--(UIColor*)randomColor{
-    CGFloat hue = ( arc4random() % 256 / 256.0 );  //0.0 to 1.0
-    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  // 0.5 to 1.0,away from white
-    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //0.5 to 1.0,away from black
-    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
-}
+//-(UIColor*)randomColor{
+//    CGFloat hue = ( arc4random() % 256 / 256.0 );  //0.0 to 1.0
+//    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5;  // 0.5 to 1.0,away from white
+//    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;  //0.5 to 1.0,away from black
+//    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+//}
 
 
 

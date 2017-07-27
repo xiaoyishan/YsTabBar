@@ -18,10 +18,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-            UILabel *SS = [UILabel new];
-            SS.frame = CGRectMake(100, 100, 100, 100);
-            SS.text = @"kjgeifqwoisfioe";
-            [self.view addSubview:SS];
+
+    
+
+
+    UILabel *SS = [UILabel new];
+    SS.frame = CGRectMake(10, 100, 200, 100);
+    SS.text = @"page 1";
+    [self.view addSubview:SS];
+
+
 
 }
 

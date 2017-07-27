@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
 
     UILabel *SS = [UILabel new];
-    SS.frame = CGRectMake(100, 100, 100, 100);
+    SS.frame = CGRectMake(10, 100, 200, 100);
     SS.text = @"44444444 4444";
     [self.view addSubview:SS];
 }
