@@ -13,11 +13,11 @@
 		213EC19B1F284ADC00F52AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213EC1991F284ADC00F52AE3 /* Main.storyboard */; };
 		213EC19D1F284ADC00F52AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213EC19C1F284ADC00F52AE3 /* Assets.xcassets */; };
 		213EC1A01F284ADC00F52AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 213EC19E1F284ADC00F52AE3 /* LaunchScreen.storyboard */; };
-		213EC1A91F2866F200F52AE3 /* YsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1A81F2866F200F52AE3 /* YsTabBar.m */; };
 		213EC1AD1F28A27500F52AE3 /* One.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1AC1F28A27500F52AE3 /* One.m */; };
 		213EC1B01F28A28100F52AE3 /* Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1AF1F28A28100F52AE3 /* Two.m */; };
 		213EC1B31F28A29100F52AE3 /* Three.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1B21F28A29100F52AE3 /* Three.m */; };
 		213EC1B61F28A29F00F52AE3 /* Four.m in Sources */ = {isa = PBXBuildFile; fileRef = 213EC1B51F28A29F00F52AE3 /* Four.m */; };
+		2173F2F01F29FAF0001BF4B0 /* YsTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173F2EF1F29FAF0001BF4B0 /* YsTabBar.m */; };
 		6F8066F6F397D94E02593FB8 /* libPods-SegmentBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 887572EFDF8C1E51FC878807 /* libPods-SegmentBar.a */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,6 @@
 		213EC19C1F284ADC00F52AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		213EC19F1F284ADC00F52AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		213EC1A11F284ADC00F52AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		213EC1A71F2866F200F52AE3 /* YsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YsTabBar.h; sourceTree = "<group>"; };
-		213EC1A81F2866F200F52AE3 /* YsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YsTabBar.m; sourceTree = "<group>"; };
 		213EC1AB1F28A27500F52AE3 /* One.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = One.h; sourceTree = "<group>"; };
 		213EC1AC1F28A27500F52AE3 /* One.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = One.m; sourceTree = "<group>"; };
 		213EC1AE1F28A28100F52AE3 /* Two.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Two.h; sourceTree = "<group>"; };
@@ -43,6 +41,8 @@
 		213EC1B21F28A29100F52AE3 /* Three.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Three.m; sourceTree = "<group>"; };
 		213EC1B41F28A29F00F52AE3 /* Four.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Four.h; sourceTree = "<group>"; };
 		213EC1B51F28A29F00F52AE3 /* Four.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Four.m; sourceTree = "<group>"; };
+		2173F2EE1F29FAF0001BF4B0 /* YsTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YsTabBar.h; sourceTree = "<group>"; };
+		2173F2EF1F29FAF0001BF4B0 /* YsTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YsTabBar.m; sourceTree = "<group>"; };
 		65F7C3A635089DDCC2ED2DBD /* Pods-SegmentBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentBar/Pods-SegmentBar.debug.xcconfig"; sourceTree = "<group>"; };
 		887572EFDF8C1E51FC878807 /* libPods-SegmentBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SegmentBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,8 +80,8 @@
 		213EC18F1F284ADC00F52AE3 /* SegmentBar */ = {
 			isa = PBXGroup;
 			children = (
-				213EC1A71F2866F200F52AE3 /* YsTabBar.h */,
-				213EC1A81F2866F200F52AE3 /* YsTabBar.m */,
+				2173F2EE1F29FAF0001BF4B0 /* YsTabBar.h */,
+				2173F2EF1F29FAF0001BF4B0 /* YsTabBar.m */,
 				213EC1AA1F28A25500F52AE3 /* SubViewControllers */,
 				213EC1961F284ADC00F52AE3 /* ViewController.h */,
 				213EC1971F284ADC00F52AE3 /* ViewController.m */,
@@ -260,10 +260,10 @@
 			files = (
 				213EC1B01F28A28100F52AE3 /* Two.m in Sources */,
 				213EC1981F284ADC00F52AE3 /* ViewController.m in Sources */,
-				213EC1A91F2866F200F52AE3 /* YsTabBar.m in Sources */,
 				213EC1AD1F28A27500F52AE3 /* One.m in Sources */,
 				213EC1B31F28A29100F52AE3 /* Three.m in Sources */,
 				213EC1B61F28A29F00F52AE3 /* Four.m in Sources */,
+				2173F2F01F29FAF0001BF4B0 /* YsTabBar.m in Sources */,
 				213EC1951F284ADC00F52AE3 /* AppDelegate.m in Sources */,
 				213EC1921F284ADC00F52AE3 /* main.m in Sources */,
 			);
