@@ -8,7 +8,7 @@
 
 #import "YsTabBar.h"
 
-#define     ScreenWidth     [UIScreen mainScreen].bounds.size.width
+
 
 @implementation YsTabBar
 
@@ -93,7 +93,7 @@
     [myLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@40);
         make.left.equalTo(@0);
-        make.width.equalTo(@(ScreenWidth/ItemNum));
+        make.width.equalTo(@(self.bounds.size.width/ItemNum));
         make.height.equalTo(@2);
     }];
 
@@ -114,7 +114,7 @@
         make.height.equalTo(myScroller.mas_height);
     }];
     //水平方向宽度固定等间隔
-    [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:ScreenWidth leadSpacing:0 tailSpacing:0];
+    [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:self.bounds.size.width leadSpacing:0 tailSpacing:0];
     [ViewArr mas_makeConstraints:^(MASConstraintMaker *make) { //数组额你不必须都是view
         make.top.equalTo(@0);
         make.height.equalTo(myScroller.mas_height);
@@ -130,19 +130,20 @@
 
 -(void)buttonSelect:(UIButton*)button{
     NSInteger page = button.tag-1000;
-    [myScroller setContentOffset:CGPointMake(ScreenWidth*page, 0) animated:YES];
+    [myScroller setContentOffset:CGPointMake(self.bounds.size.width*page, 0) animated:YES];
     [self ClickToNewPage:page];
 
 
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-}
+//iOS8版本之前不能使用这个危险的方法
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    
+//}
 
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    NSInteger Page = scrollView.contentOffset.x/ScreenWidth;
+    NSInteger Page = scrollView.contentOffset.x/self.bounds.size.width;
     [self ClickToNewPage:Page];
 }
 
@@ -168,7 +169,7 @@
     }
 
     //更新线条
-    float myOff_X = ScreenWidth / ItemNum * page;
+    float myOff_X = self.bounds.size.width / ItemNum * page;
     [UIView animateWithDuration:.25 animations:^{
         [myLine mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(@(myOff_X));
