@@ -140,35 +140,44 @@
 
     //标签
     //水平方向控件间隔固定等间隔
-    [ButtonArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
-    [ButtonArr mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@0);
-        make.height.equalTo(@40);
-    }];
+    if (ButtonArr.count>1) {
+        [ButtonArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
+        [ButtonArr mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@0);
+            make.height.equalTo(@40);
+        }];
+    }
 
     //展分线条
-    [LineArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:1 leadSpacing:Width/ItemNum tailSpacing:Width/ItemNum];
-    [LineArr mas_makeConstraints:^(MASConstraintMaker *make) { //数组额你不必须都是view
-        make.top.equalTo(@0);
-        make.height.equalTo(@40);
-    }];
+    if (LineArr.count>1) {
+        [LineArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:1 leadSpacing:Width/ItemNum tailSpacing:Width/ItemNum];
+        [LineArr mas_makeConstraints:^(MASConstraintMaker *make) { //数组额你不必须都是view
+            make.top.equalTo(@0);
+            make.height.equalTo(@40);
+        }];
+    }
+
 
 
 
     //主窗体
     //水平方向控件间隔固定等间隔
-    [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
-    [ViewArr mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@0);
-        make.height.equalTo(myScroller.mas_height);
-    }];
-    //水平方向宽度固定等间隔
-    [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:Width leadSpacing:0 tailSpacing:0];
-    [ViewArr mas_makeConstraints:^(MASConstraintMaker *make) { //数组额你不必须都是view
-        make.top.equalTo(@0);
-        make.height.equalTo(myScroller.mas_height);
-    }];
+    if (ViewArr.count>1) {
+        [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
+        [ViewArr mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(@0);
+            make.height.equalTo(myScroller.mas_height);
+        }];
+    }
 
+    //水平方向宽度固定等间隔
+    if (ViewArr.count>1) {
+        [ViewArr mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:Width leadSpacing:0 tailSpacing:0];
+        [ViewArr mas_makeConstraints:^(MASConstraintMaker *make) { //数组额你不必须都是view
+            make.top.equalTo(@0);
+            make.height.equalTo(myScroller.mas_height);
+        }];
+    }
 
 
 
