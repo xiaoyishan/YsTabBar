@@ -85,6 +85,7 @@
             [controllers[i] isKindOfClass:[UITableViewController class]]||
             [controllers[i] isKindOfClass:[UICollectionViewController class]]){
             [SubV addSubview:[controllers[i] view]];
+            [[self viewController:self] addChildViewController:controllers[i]];//加入控制器
         }else{
             //view
             [SubV addSubview:controllers[i]];
@@ -250,7 +251,19 @@
 }
 
 
+//返回当前视图的控制器
+- (UIViewController *)viewController:(UIView*)myView {
 
+    for (UIView* next = [myView superview]; next; next = next.superview) {
+
+        UIResponder *nextResponder = [next nextResponder];
+
+        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)nextResponder;
+        }
+    }
+    return nil;
+}
 
 
 
