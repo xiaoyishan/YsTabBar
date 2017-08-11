@@ -24,5 +24,8 @@ typedef void (^ClickBlock)(NSInteger Page);
 /* 添加自定义控制器 或 自定义View    到 YsTableBar*/
 -(void)AddSubVCArr:(NSArray*)controllers TitleArr:(NSArray*)titles Switching:(ClickBlock)block;
 
+/**滚动到某分页 */
+-(void)ScrollerPage:(NSInteger)page;
+
 
 @end

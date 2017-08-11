@@ -238,6 +238,11 @@
 }
 
 
+/**滚动到某分页 */
+-(void)ScrollerPage:(NSInteger)page{
+    UIButton *button = [self viewWithTag:1000+page];
+    if(button)[self buttonSelect:button];
+}
 
 
 
