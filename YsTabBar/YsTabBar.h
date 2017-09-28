@@ -4,7 +4,7 @@
 //
 //  Created by Sundear on 2017/7/26.
 //  Copyright © 2017年 xiexin. All rights reserved.
-//
+//  兼容iOS11 放弃对masonry的支持来提高良好的拓展适应性
 
 #import <UIKit/UIKit.h>
 //#import "Masonry.h"
